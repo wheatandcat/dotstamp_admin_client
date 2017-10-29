@@ -1,5 +1,6 @@
 // @flow
 import React, { type Node } from "react"
+import styled from "styled-components"
 import AppBar from "material-ui/AppBar"
 import Toolbar from "material-ui/Toolbar"
 import Typography from "material-ui/Typography"
@@ -10,6 +11,10 @@ export type Props = {
   children?: Node,
   title: string
 }
+
+const Contents = styled.div`
+  padding-top: 1rem;
+`
 
 export default ({ title, children }: Props) => (
   <div>
@@ -25,7 +30,7 @@ export default ({ title, children }: Props) => (
             </Typography>
           </Toolbar>
         </AppBar>
-        {children}
+        <Contents>{children}</Contents>
       </Grid>
     </Grid>
   </div>
