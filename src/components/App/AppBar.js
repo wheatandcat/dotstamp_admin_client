@@ -19,10 +19,10 @@ const Contents = styled.div`
 export default ({ title, children }: Props) => (
   <div>
     <Grid container spacing={24}>
-      <Grid item xs={6} sm={2}>
+      <Grid item sm={2}>
         <Menu />
       </Grid>
-      <Grid item xs={18} sm={10}>
+      <Grid item sm={10}>
         <AppBar position='static' color='default'>
           <Toolbar>
             <Typography type='title' color='inherit'>
