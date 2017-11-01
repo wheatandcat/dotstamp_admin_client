@@ -6,20 +6,16 @@ export type Props = {
   id: number,
   title: string,
   userId: number,
-  viewStatus: number,
-  createdAt: string,
-  updatedAt: string,
-  deletedAt: ?string
+  type: number,
+  createdAt: string
 }
 
-export default ({ id, title, userId, viewStatus, createdAt, updatedAt, deletedAt }: Props) => (
+export default ({ id, title, userId, type, createdAt }: Props) => (
   <TableRow>
     <TableCell>{id}</TableCell>
     <TableCell>{title}</TableCell>
     <TableCell>{userId}</TableCell>
-    <TableCell>{viewStatus}</TableCell>
+    <TableCell>{type === 1 ? "スパム" : "その他"}</TableCell>
     <TableCell>{createdAt}</TableCell>
-    <TableCell>{updatedAt}</TableCell>
-    <TableCell>{deletedAt ? 1 : 0}</TableCell>
   </TableRow>
 )

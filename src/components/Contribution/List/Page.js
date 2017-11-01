@@ -17,6 +17,9 @@ export default withCharacter(
         userId
         title
         viewStatus
+        createdAt
+        updatedAt
+        deletedAt
       }
     }
   `,

@@ -1,4 +1,7 @@
-import { configure } from "@storybook/react"
+import { configure, addDecorator } from "@storybook/react"
+import { provider } from "./decorators"
+
+addDecorator(provider)
 
 const req = require.context("../src", true, /stories.js$/)
 

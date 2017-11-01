@@ -8,10 +8,8 @@ export default () => (
       <TableCell>ID</TableCell>
       <TableCell>タイトル</TableCell>
       <TableCell>ユーザーID</TableCell>
-      <TableCell>表示状態</TableCell>
-      <TableCell>作成日時</TableCell>
-      <TableCell>更新日時</TableCell>
-      <TableCell>削除</TableCell>
+      <TableCell>タイプ</TableCell>
+      <TableCell>通報日時</TableCell>
     </TableRow>
   </TableHead>
 )
