@@ -1,7 +1,8 @@
 {
   "name": "dotstamp_admin_client",
   "version": "0.1.0",
-  "private": true,
+  "author": "wheatandcat",
+  "license": "MIT",
   "dependencies": {
     "apollo-client": "^1.9.0-1",
     "graphql": "^0.11.7",
