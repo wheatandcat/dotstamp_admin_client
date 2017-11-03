@@ -19,13 +19,18 @@ export default () => (
         </Link>
       </ListItem>
       <ListItem button>
+        <Link to='/user'>
+          <ListItemText primary='ユーザー' />
+        </Link>
+      </ListItem>
+      <ListItem button>
         <Link to='/problem'>
           <ListItemText primary='通報ログ' />
         </Link>
       </ListItem>
       <ListItem button>
-        <Link to='/'>
-          <ListItemText primary='ユーザー' />
+        <Link to='/question'>
+          <ListItemText primary='問い合わせログ' />
         </Link>
       </ListItem>
     </List>

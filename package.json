@@ -25,17 +25,25 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "proxy": {
     "/graphql": {
       "target": "http://localhost:8080"
     }
   },
+  "storybook-deployer": {
+    "gitUsername": "wheatandcat",
+    "gitEmail": "wheatandcat@gamail.com",
+    "commitMessage": ".stamp admin storybook to GitHub Pages"
+  },
   "devDependencies": {
+    "@personare/react-storybook-decorator-github-corner": "^0.1.5",
     "@storybook/addon-actions": "^3.2.13",
     "@storybook/addon-links": "^3.2.13",
     "@storybook/react": "^3.2.13",
+    "@storybook/storybook-deployer": "^2.0.0",
     "eslint": "^4.7.2",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-standard": "^10.2.1",

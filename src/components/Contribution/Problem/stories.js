@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react"
 import { List, Item, Header, Summary } from "./"
 
 storiesOf("Contribution/Problem", module)
-  .add(" Summary", () => (
+  .add("Summary", () => (
     <Summary
       items={[
         {
@@ -24,7 +24,7 @@ storiesOf("Contribution/Problem", module)
       ]}
     />
   ))
-  .add(" List", () => (
+  .add("List", () => (
     <List
       items={[
         {
@@ -44,7 +44,7 @@ storiesOf("Contribution/Problem", module)
       ]}
     />
   ))
-  .add(" Header", () => <Header />)
-  .add(" Item", () => (
-    <Item id={1} title='foo' userId={1} type={1} createdAt={"2010-10-01 10:00:00"} />
+  .add("Header", () => <Header />)
+  .add("Item", () => (
+    <Item id={1} title='foo' userId={1} type={1} createdAt='2010-10-01 10:00:00' />
   ))
