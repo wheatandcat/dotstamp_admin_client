@@ -1,6 +1,7 @@
 // @flow
 import React from "react"
 import { TableCell, TableRow } from "material-ui/Table"
+import Switching from "./Switching"
 
 export type Props = {
   id: number,
@@ -20,6 +21,8 @@ export default ({ id, title, userId, viewStatus, createdAt, updatedAt, deletedAt
     <TableCell>{viewStatus}</TableCell>
     <TableCell>{createdAt}</TableCell>
     <TableCell>{updatedAt}</TableCell>
-    <TableCell>{deletedAt ? 1 : 0}</TableCell>
+    <TableCell>
+      <Switching initShow={!!deletedAt} />
+    </TableCell>
   </TableRow>
 )
